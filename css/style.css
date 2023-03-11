@@ -167,7 +167,7 @@ html{
     margin: 2re;
 }
 .titulo_general .TituloGeneral{
-    background-color: #285027;
+    background-color: #ba1313;
     position: static;
     text-align: center;
     color: #ffffff;
@@ -175,7 +175,7 @@ html{
     padding: 25px;
     font-weight: bold;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    text-shadow:  0 0 10px rgb(234, 236, 237) , 0 0 20px rgb(64, 72, 65) , 0 0 30px rgb(4, 105, 17) , 0 0 40px #0e6f26 , 0 0 70px #0a520b , 0 0 80px #078b2c , 0 0 100px #076736 ;
+    text-shadow:  0 0 10px rgb(234, 236, 237) , 0 0 20px rgb(64, 72, 65) , 0 0 30px rgb(9, 4, 105) , 0 0 40px #500e6f , 0 0 70px #0a520b , 0 0 80px #078b2c , 0 0 100px #076736 ;
    
 }
 /* Animation */
@@ -401,6 +401,7 @@ html{
 .site-footer{
     padding: 1rem;
     margin: 2rem;
+    width: 90%;
 
 }
 .site-footer .row{
@@ -600,7 +601,7 @@ html{
 .informacion{
     position: sticky;
     position: static;
-    margin: 2rem;
+    margin: 8rem;
     text-align: justify;
     display: flex;
     
@@ -610,9 +611,10 @@ html{
     position: static;
     font-size:xx-large;
     border-left: 1rem solid;
-    border-color:#0a520b;
+    border-color:#2b2573;
     padding: 2rem;
-    background-color: #b9f2ba;
+    background-color: #4aa5ac;
+    width: 100%;
     
     
 
@@ -620,17 +622,31 @@ html{
 }
 .informacion .subtitulos .parrafos{
     position: static;
+    
     font-size: 2rem;
     font-weight: bold;
-    padding: 2rem;
+    padding: 1rem;
 }
-.textospdf{
-    align-content: center;
-    margin:5rem;
+.contenidosiframe{
+    display: flex;
+    align-content: space-around 2rem;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    
 
 }
+.contenidosiframe .textospdf{
+    width: 45%;
+}
 .textospdf iframe{
-    position: center;
     width: 100%;
-    height: 80vw;
+    height: 60vw;
+}
+.contenidosiframe .videos{
+    width: 45%;
+}
+.videos iframe{
+    height:60vw ;
+    width: 100%;
 }

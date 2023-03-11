@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OLiveMath</title>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -31,11 +31,11 @@
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
                     <li><a href="./index.html">INICIO</a></li>
-                    <li><a href="./about.html">ACERCA DE NOSOTROS</a></li>
                     <li><a href="./cursos.html">CURSOS</a></li>
                     <li><a href="/registro.html">REGISTRO</a></li>
                     <li><a href="./login.html">INICIO DE SESIÓN</a></li>
                     <li><a href="./contact.html">CERRAR SESION </a></li>
+                    <li><a href="./about.html">ACERCA DE NOSOTROS</a></li>
                 </ul>
             </div>
             <span class="navTrigger">
@@ -143,113 +143,111 @@
             </p>
         </div>
     </div>
-    <div class="videos">
+    <div class="informacion">
+        <div class="subtitulos">
+            <h1 class="subtitulosinfo">
+                <span class="titulos_title">
+                    ¿CUALES SON LAS COMPETENCIAS DE LAS TIC SEGÚN LA ONU?
+                </span>
+            </h1>
+            <p class="parrafos">
+                Para saber de estas veamos el siguiente video:
+
+            </p>
+        </div>
+
+    </div>
+    <div class="contenidosiframe">
+        <div class="videos">
         <iframe src='https://canal.uned.es/iframe/5b473093b1111f6f5b8b4568' id='pumukitiframe' frameborder='0'
             border='0' width='560' height='315' allowfullscreen></iframe>
     </div>
     <div class="textospdf">
         <iframe src="./assets/archivos/265721eng.pdf" frameborder="0"></iframe>
     </div>
-
-    <div class="container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam harum quisquam velit ad consequatur
-            voluptate et dignissimos, possimus non dolores dolor similique saepe, consequuntur facere eos laudantium ab
-            placeat.</p>
     </div>
-    <div class="container">
+    
 
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="home-img">
-                    <img src="./images/home-img.png" alt="">
+
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $(".nav").addClass("affix");
+                console.log("OK");
+            } else {
+                $(".nav").removeClass("affix");
+            }
+        });
+    </script>
+
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to help
+                        the
+                        upcoming programmers with the code. Scanfcode focuses on providing the most efficient code
+                        or
+                        snippets as the code wants to be simple. We will help programmers build up concepts in
+                        different
+                        programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP,
+                        Android,
+                        SQL and Algorithm.</p>
                 </div>
 
+                <div class="col-xs-4 col-md-3">
+                    <h6>Categories</h6>
+                    <ul class="footer-links">
+                        <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+                        <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+                        <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+                        <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+                        <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+                        <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-4 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="http://scanfcode.com/about/">About Us</a></li>
+                        <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+                        <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+                        <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved
+                        <a href="#"></a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-
-
-        <!-- Jquery needed -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="./js/script.js"></script>
-
-        <!-- Function used to shrink nav bar removing paddings and adding black background -->
-        <script>
-            $(window).scroll(function () {
-                if ($(document).scrollTop() > 50) {
-                    $(".nav").addClass("affix");
-                    console.log("OK");
-                } else {
-                    $(".nav").removeClass("affix");
-                }
-            });
-        </script>
-        <div class="contenido">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, in ipsum, facere dolores commodi
-                adipisci, cupiditate provident similique doloremque voluptatem eveniet ratione architecto soluta debitis
-                sit laudantium ut dolorum quaerat!</p>
-        </div>
-
-        <!-- Site footer -->
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-4 col-md-6">
-                        <h6>About</h6>
-                        <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to help
-                            the
-                            upcoming programmers with the code. Scanfcode focuses on providing the most efficient code
-                            or
-                            snippets as the code wants to be simple. We will help programmers build up concepts in
-                            different
-                            programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP,
-                            Android,
-                            SQL and Algorithm.</p>
-                    </div>
-
-                    <div class="col-xs-4 col-md-3">
-                        <h6>Categories</h6>
-                        <ul class="footer-links">
-                            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-                            <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-                            <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-                            <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-                            <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-                            <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-xs-4 col-md-3">
-                        <h6>Quick Links</h6>
-                        <ul class="footer-links">
-                            <li><a href="http://scanfcode.com/about/">About Us</a></li>
-                            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-                            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-                            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-                            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <hr>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-sm-6 col-xs-12">
-                        <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved
-                            <a href="#"></a>.
-                        </p>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <ul class="social-icons">
-                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    </footer>
 
 
 
