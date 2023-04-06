@@ -155,6 +155,21 @@ html{
     background-image: url("../assets/img/homeimg.jpg");
     background-position: center top;
     background-size: cover;
+    
+    text-align: center;
+}
+.home .Titulo_Inicio{
+    color: #ffffff;
+    font-size: x-large;
+    position: absolute;
+    text-align: center;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
+
 }
 .home .titulos{
     font-size: x-large;
@@ -650,3 +665,68 @@ html{
     height:60vw ;
     width: 100%;
 }
+
+.canvasiframe iframe{
+    width: 90vw;
+    height: 80vw;
+}
+
+
+.background {
+    position: sticky;
+    height: 40vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+  }
+
+
+  /*   frame */
+
+  .informacion .frame1{
+    width: 10vw;
+    
+  }
+  .informacion .frame2 iframe {
+    width: 80vw;
+    align-content: center;
+    height: 50vw;
+  }
+
+  /* navegacion entre paginas */
+
+  nav .navegacion {
+    width: 100%;
+    display: flex;
+    align-content: center;
+
+  }
+  .navegacion ul li {
+    display:inline-table;
+    align-content:space-around 12rem;
+    height: 2rem;
+    text-decoration: none;
+
+
+  }
+
+  .navegacion ul li a{
+    align-content: space-around;
+    margin: 10vw;
+    padding: 0.5vw;
+    font-size: xx-large;
+    font-weight:bold; 
+    text-decoration: none;
+    background-color: #00aced;
+    border-radius: 7px;
+    color: #4d0404;
+
+
+  }
+
+  .navegacion ul li a:hover{
+    background-color: #00E676;
+    color: #0b0b0b;
+  }
