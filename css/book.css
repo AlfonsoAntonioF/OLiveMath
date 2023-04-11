@@ -1,0 +1,210 @@
+.book {
+    position: relative;
+    border-radius: 10px;
+    width: 220px;
+    height: 300px;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000;
+  }
+  
+  .cover {
+    top: 0;
+    position: absolute;
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  .book:hover .cover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-80deg);
+    -ms-transform: rotatey(-80deg);
+    transform: rotatey(-80deg);
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+
+
+  /*...............................carrousel ............................*/
+
+  .carrousel {
+    width: 900px;
+    height: calc(600px - 150px);
+    margin: auto;
+    overflow: hidden;
+    font-size: 0;
+    position: relative;
+    text-align: left;
+  }
+  .carrousel .screens {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    width: 900px;
+    height: 600px;
+    position: relative;
+    transform: translate(0%, -30%);
+  }
+  .carrousel .screens > li {
+    width: 0%;
+    height: 100%;
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    font-size: 15px;
+    overflow: hidden;
+    background: #bbb;
+    border-radius: 10px;
+    opacity: 0;
+    filter: blur(5px);
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    transform: translate(50%, 0);
+    transition: all 0.7s;
+    pointer-events: none;
+  }
+  .carrousel .screens > li:hover {
+    filter: none;
+    opacity: 1;
+  }
+  .carrousel .screens > li.active {
+    opacity: 1;
+    filter: none;
+    width: 70%;
+    height: 70%;
+    z-index: 100;
+    transform: none;
+    transform: translate(20%, 0);
+  }
+  .carrousel .screens > li.active,
+  .carrousel .screens > li.left,
+  .carrousel .screens > li.right {
+    pointer-events: all;
+  }
+  .carrousel .screens > li.left,
+  .carrousel .screens > li.right {
+    transform: translate(0%, 0);
+    opacity: 0.5;
+  }
+  .carrousel .screens > li.left {
+    transform: translate(0%, 0);
+  }
+  .carrousel .screens > li.right {
+    transform: translate(100%, 0);
+  }
+  .carrousel .screens > li p {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    display: flex;
+    height: 100%;
+    color: #6a2c2c;
+    font-size: 20px;
+    pointer-events: none;
+  }
+  .carrousel .pagination {
+    list-style: none;
+    padding: 5px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .carrousel .pagination li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    opacity: 0.3;
+    cursor: pointer;
+    background: #000;
+    border-radius: 100%;
+    transition: all 0.2s;
+    background-size: cover;
+    background-position: center;
+  }
+  .carrousel .pagination li:hover,
+  .carrousel .pagination li.active {
+    opacity: 1;
+  }
+  #s1 {
+    background-image: url(https://doocode.xyz/res/img/backgrounds/DCG34.png);
+    background-size: cover;
+    background-position: center;
+  }
+  #s2 {
+    background-image: url(https://doocode.xyz/res/img/backgrounds/DCG33.png);
+    background-size: cover;
+    background-position: center;
+  }
+  #s3 {
+    background-image: url(https://doocode.xyz/res/img/backgrounds/DCG32.png);
+    background-size: cover;
+    background-position: center;
+  }
+  #s4 {
+    background-image: url(https://doocode.xyz/res/img/backgrounds/DCG31.png);
+    background-size: cover;
+    background-position: center;
+  }
+  #s5 {
+    background-image: url(https://doocode.xyz/res/img/backgrounds/DCG30.png);
+    background-size: cover;
+    background-position: center;
+  }
+  #s6 {
+    background-image: url(https://doocode.xyz/res/img/backgrounds/DCG29.png);
+    background-size: cover;
+    background-position: center;
+  }
+  #s7 {
+    background-image: url(https://doocode.xyz/res/img/backgrounds/DCG28.png);
+    background-size: cover;
+    background-position: center;
+  }
+  

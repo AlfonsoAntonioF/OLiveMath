@@ -1,0 +1,9 @@
+.actividadform{
+    width: 100%;
+    display: flex;
+    align-content: center;
+}
+
+.actividadform .relleno1{
+    width: 100%;
+}
