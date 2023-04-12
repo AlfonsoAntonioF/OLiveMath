@@ -141,7 +141,7 @@
     text-align: left;
     display: flex;
     height: 100%;
-    color: #6a2c2c;
+    color: #f2ef50;
     font-size: 20px;
     pointer-events: none;
   }
@@ -178,33 +178,124 @@
     background-position: center;
   }
   #s2 {
-    background-image: url(https://doocode.xyz/res/img/backgrounds/DCG33.png);
+    background: rgb(3,4,111);
+background: linear-gradient(153deg, rgba(3,4,111,1) 0%, rgba(60,137,149,1) 73%, rgba(234,238,173,1) 100%);
+    
+    /*background-image: url(https://doocode.xyz/res/img/backgrounds/DCG33.png);*/
     background-size: cover;
     background-position: center;
+    
   }
   #s3 {
-    background-image: url(https://doocode.xyz/res/img/backgrounds/DCG32.png);
+    background-image: url(https://phantom-marca.unidadeditorial.es/89b4dccd0e4c1e4381eeddacc01e8572/resize/1320/f/jpg/assets/multimedia/imagenes/2021/10/07/16336130094614.jpg);
     background-size: cover;
     background-position: center;
   }
   #s4 {
-    background-image: url(https://doocode.xyz/res/img/backgrounds/DCG31.png);
-    background-size: cover;
+    background-image: url(https://image.spreadshirtmedia.net/image-server/v1/products/T1459A839PA4459PT28D16085658W10000H4806/views/1,width=550,height=550,appearanceId=839,backgroundColor=F2F2F2/evolution-student-sticker.jpg);
+    background-size:100% 100%;
     background-position: center;
+    align-content: center;
+    text-align: center;
   }
   #s5 {
-    background-image: url(https://doocode.xyz/res/img/backgrounds/DCG30.png);
+    background-image: url(https://img.freepik.com/foto-gratis/arreglo-geometrico-formas-3d_23-2149049003.jpg?w=1060&t=st=1681276333~exp=1681276933~hmac=c650fd7e653d09c7f99523e49af0eb8bc725e6eb902f80c93186e04e411d4fa8);
     background-size: cover;
     background-position: center;
+    margin: 2rem;
   }
   #s6 {
-    background-image: url(https://doocode.xyz/res/img/backgrounds/DCG29.png);
-    background-size: cover;
+    background-image: url(https://i.ytimg.com/vi/riqswI-kBoI/maxresdefault.jpg);
+    background-size: 90% 70%;
+    background-repeat: no-repeat;
     background-position: center;
   }
   #s7 {
-    background-image: url(https://doocode.xyz/res/img/backgrounds/DCG28.png);
+    background-image: url(https://www.lucaedu.com/wp-content/uploads/2022/11/que-es-una-biblioteca-virtual.jpg);
     background-size: cover;
     background-position: center;
   }
-  
+
+  #s1 .def1{
+    width: 44%;
+    margin: 2rem;
+    text-align: justify;
+    height: 350px;
+    color: aliceblue;
+    
+
+  }
+  #s2 .genral{
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  #s2 .genral .c1,.c2{
+    width: 50%;
+    
+  }
+  #s2 .genral .c1{
+    
+    height: 100%;
+
+  }
+  #s2 .genral .c1 .def2{
+    color: #ffffff;
+    margin: 2rem;
+    text-align: justify;
+    height: 80%;
+  }
+
+  #s2 .genral .c2{
+   /* background-image: url(https://doocode.xyz/res/img/backgrounds/DCG33.png);
+    */
+    
+    background-size: cover;
+  }
+
+  #s2 .genral .c2 .imgc2{
+    margin-top: 10rem;
+    width: 100%;
+    height: 50%;
+    border-radius: 20% 10% 20% 10%;
+
+  }
+
+  #s3 .def3{
+    font-size: 12px;
+    color: #000;
+    height: 118%;
+    width: 80%;
+    margin-left: 1.5rem;
+
+  }
+
+  #s4 .def4{
+    width: 98%;
+    height: auto;
+    color: #000;
+    margin: 3rem ;
+    
+  }
+
+  #s5 .def5{
+    color: #ffffff;
+    height: 50%;
+    width: 50%;
+    margin: 2rem;
+  }
+
+  #s6 .def6{
+    color: #000;
+    height: 10%;
+    margin: 10px 10px;
+    text-align: center;
+  }
+
+  #s7 .def7{
+    width: 40%;
+    height: 50%;
+    margin: 5px;
+    color: #73166d;
+  }
+
