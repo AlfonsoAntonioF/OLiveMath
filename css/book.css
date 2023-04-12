@@ -173,7 +173,7 @@
     opacity: 1;
   }
   #s1 {
-    background-image: url(https://doocode.xyz/res/img/backgrounds/DCG34.png);
+    background-image: url("../assets/img/pizarra1.jpg");
     background-size: cover;
     background-position: center;
   }
