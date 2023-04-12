@@ -22,8 +22,6 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/card.css">
-    <link rel="stylesheet" href="../css/rellenos.css">
-    <link rel="stylesheet" href="../css/book.css">
     <!--<link rel="stylesheet" href="./css/animationes.css">
 
     <script src="./js/animationes.js"></script>
@@ -54,15 +52,14 @@
             </span>
         </div>
     </nav>
-
+    
 
     <section class="home">
-        <h1 class="Titulo_Inicio">Desarrollo de material didáctico-pedagógico para la enseñanza de las matemáticas con
-            el uso de las TIC </h1>
+        <h1 class="Titulo_Inicio">Desarrollo de material didáctico-pedagógico para la enseñanza de las matemáticas con el uso de las TIC </h1>
         <!-- <div class="titulos">
             <h1 class="TituloGeneral">COMPETENCIAS DEL PROFESORADO EN EL USO DE LAS TIC </h1>
         </div>-->
-
+        
     </section>
 
 
@@ -71,81 +68,20 @@
 
 
     </div>
-    <div class="informacion">
-        <div class="subtitulos">
-            <h1 class="subtitulosinfo">
-                <span class="titulos_title">Características del material didáctico </span>
-            </h1>
 
-            <p class="parrafos">
+    <section class="actividad1form">
+        <div style="width:100%;display:flex;flex-direction:column;gap:8px;min-height:635px;margin:1rem;"><iframe width="100%" height="500px"   src="https://forms.office.com/Pages/ResponsePage.aspx?id=x8fjOlHq3kaVQBL0EQ6sm_GrMznWfWFNpeTpp4IjNN1UOVY4VEpFMU9INUxPVkdYSkc2RDFCRk5CVC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe></div>
+    </section>
 
-                Al momento de incursionar en la búsqueda o elaboración de un material didáctico,
-                debemos tomar en cuenta ciertas características fundamentales que no podemos dejar pasar,
-                Fernández, Alburquerque y Paredes explican que estas características son:
-            </p>
-        </div>
-    </div>
-
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
-    <h1></h1>
-    <p></p>
-    <div class="carrousel">
-        <ul class="screens">
-            <li id="s1">
-                <p class="def1">Que sean aprovechados los recursos que ofrecen los diferentes contextos
-                    sociales, culturales y geográficos del país, para la realización de actividades, así
-                    como para la confección de diversos recursos.</p>
-            </li>
-            <li id="s2" class="left">
-                <div class="genral">
-                    <div class="c1">
-                        <p class="def2">Que el material elaborado con recursos del medio posibilite que el niño o la
-                            niña realice una serie de combinaciones, que le divierta y favorezca su
-                            desarrollo físico, cognoscitivo y afectivo.
-                        </p>
-                    </div>
-                    <div class="c2">
-                        <img class="imgc2" src="../assets/img/imgc2.png" alt="">
-                    </div>
-                </div>
-
-
-            </li>
-            <li id="s3" class="active">
-                <p class="def3">Que responda a las tareas concretas del proceso educativo.
-                </p>
-            </li>
-            <li id="s4" class="right">
-                <p class="def4">Que corresponda con la edad del niña (o) ajustándose a su nivel de desarrollo
-                    evolutivo.</p>
-            </li>
-            <li id="s5">
-                <p class="def5">Que reflejen claramente sus propiedades y cualidades, por ejemplo: colores
-                    vivos, formas agradables.</p>
-            </li>
-            <li id="s6">
-                <p class="def6">
-                    Que se posibilite su uso, tanto en actividades individuales como grupales.
-                </p>
-            </li>
-            <li id="s7">
-                <p class="def7"> 
-                    Contar con un repertorio variado y selecto de juegos, juguetes y materiales. <br>
-                    
-                </p>
-            </li>
-        </ul>
-        <div class="pagination"></div>
-    </div>
     <nav class="navegacion">
         <ul>
-            <li><a href="./actividad2.html"><img src="../assets/img/lefth-arrow.png" alt="atras"></a></li>
+            <li><a href="./actividad3.html"><img src="../assets/img/lefth-arrow.png" alt="atras"></a></li>
             <li><a href="../index.html"><img src="../assets/img/home-button.png" alt="inicio"></a></li>
-            <li><a href="./actividad3.html"><img src="../assets/img/right-arrow.png" alt="adelante"></a></li>
+            <li><a href="./tiposmaterial.html"><img src="../assets/img/right-arrow.png" alt="adelante"></a></li>
         </ul>
     </nav>
 
-
+    
 
 
     <!-- Jquery needed -->
@@ -162,61 +98,6 @@
                 $(".nav").removeClass("affix");
             }
         });
-    </script>
-
-    <script>
-        $(function () {
-            let current_view = 0;
-            let count_views = $(".carrousel .screens li").length;
-
-            // Methodes
-            let switch_view = function (id) {
-                if (id >= 0 && id <= count_views) current_view = id;
-                update_view();
-            };
-            let init_pagination = function () {
-                for (let i = 0; i < count_views; i++) {
-                    let page = $("<li/>");
-                    $(page).click(function () {
-                        switch_view(i);
-                    });
-                    $(".carrousel .pagination").append(page);
-                }
-            };
-            let update_view = function () {
-                // Calculate the current state
-                let view0 = current_view;
-                let view1 = current_view + 1;
-                let view2 = current_view + 2;
-                if (view0 <= 0) view0 = count_views;
-                if (view2 > count_views) view2 = 1;
-                $(".carrousel .screens li").removeClass("left right");
-                $(".carrousel .screens li, .carrousel .pagination li").removeClass(
-                    "active"
-                );
-                $(".carrousel .screens li:nth-child(" + view1 + ")").addClass("active");
-                $(".carrousel .screens li:nth-child(" + view0 + ")").addClass("left");
-                $(".carrousel .screens li:nth-child(" + view2 + ")").addClass("right");
-                $(".carrousel .pagination li:nth-child(" + view1 + ")").addClass(
-                    "active"
-                );
-            };
-            $(".carrousel .screens li").click(function (e) {
-                let classes = $(e.target).attr("class");
-                if (classes.includes("left")) {
-                    if (current_view == 0) current_view = count_views - 1;
-                    else current_view--;
-                } else if (classes.includes("right")) {
-                    if (current_view == count_views - 1) current_view = 0;
-                    else current_view++;
-                }
-                update_view();
-            });
-
-            init_pagination();
-            update_view();
-        });
-
     </script>
 
 

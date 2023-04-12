@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
+
     <!--
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -24,6 +25,7 @@
     <link rel="stylesheet" href="../css/card.css">
     <link rel="stylesheet" href="../css/rellenos.css">
     <link rel="stylesheet" href="../css/book.css">
+    <link rel="stylesheet" href="../css/acordion.css">
     <!--<link rel="stylesheet" href="./css/animationes.css">
 
     <script src="./js/animationes.js"></script>
@@ -74,14 +76,13 @@
     <div class="informacion">
         <div class="subtitulos">
             <h1 class="subtitulosinfo">
-                <span class="titulos_title">Características del material didáctico </span>
+                <span class="titulos_title">Tipos de material didáctico </span>
             </h1>
 
             <p class="parrafos">
-
-                Al momento de incursionar en la búsqueda o elaboración de un material didáctico,
-                debemos tomar en cuenta ciertas características fundamentales que no podemos dejar pasar,
-                Fernández, Alburquerque y Paredes explican que estas características son:
+                Dependiendo de la forma en la que sea elaborado el material didáctico, puede variar en su clasificación.
+                También depende del tipo de uso que se le dé, el espacio que abarque, las actividades que implique o a
+                quién se dirija. Entre algunos tipos de material didáctico se pueden mencionar:
             </p>
         </div>
     </div>
@@ -89,59 +90,78 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
     <h1></h1>
     <p></p>
-    <div class="carrousel">
-        <ul class="screens">
-            <li id="s1">
-                <p class="def1">Que sean aprovechados los recursos que ofrecen los diferentes contextos
-                    sociales, culturales y geográficos del país, para la realización de actividades, así
-                    como para la confección de diversos recursos.</p>
-            </li>
-            <li id="s2" class="left">
-                <div class="genral">
-                    <div class="c1">
-                        <p class="def2">Que el material elaborado con recursos del medio posibilite que el niño o la
-                            niña realice una serie de combinaciones, que le divierta y favorezca su
-                            desarrollo físico, cognoscitivo y afectivo.
-                        </p>
-                    </div>
-                    <div class="c2">
-                        <img class="imgc2" src="../assets/img/imgc2.png" alt="">
-                    </div>
-                </div>
+    <!-- Contenedor -->
+    <ul id="accordion" class="accordion">
+        <li>
+            <div class="link">Materiales Impresos<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+                <li>Incluyen todos aquellos recursos impresos como libros, textos de lectura o de consulta,
+                    diccionarios,
+                    enciclopedias, revistas especializadas, guías, manuales, artículos y más.
+                    <br>
+                    <img src="https://img.freepik.com/vector-gratis/ilustracion-pila-libros-diseno-plano-dibujado-mano_23-2149341898.jpg?w=826&t=st=1681326429~exp=1681327029~hmac=8f191c92db988e8b3cdbf0431148949486f911e8b01e2873876f9e3adafd1e02"
+                        alt="">
 
+                </li>
 
-            </li>
-            <li id="s3" class="active">
-                <p class="def3">Que responda a las tareas concretas del proceso educativo.
-                </p>
-            </li>
-            <li id="s4" class="right">
-                <p class="def4">Que corresponda con la edad del niña (o) ajustándose a su nivel de desarrollo
-                    evolutivo.</p>
-            </li>
-            <li id="s5">
-                <p class="def5">Que reflejen claramente sus propiedades y cualidades, por ejemplo: colores
-                    vivos, formas agradables.</p>
-            </li>
-            <li id="s6">
-                <p class="def6">
-                    Que se posibilite su uso, tanto en actividades individuales como grupales.
-                </p>
-            </li>
-            <li id="s7">
-                <p class="def7"> 
-                    Contar con un repertorio variado y selecto de juegos, juguetes y materiales. <br>
-                    
-                </p>
-            </li>
-        </ul>
-        <div class="pagination"></div>
-    </div>
+            </ul>
+        </li>
+        <li>
+            <div class="link">Materiales de área o espaciales<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+                <li>Suelen formar parte de espacios específicos o pueden requerir un área delimitada para su uso.
+                    Algunos ejemplos son los juegos, materiales de laboratorio, mapas gigantes, elementos deportivos
+                    como aros o pelotas, maquetas, herbarios, entre otros.
+                </li>
+
+            </ul>
+        </li>
+        <li>
+            <div class="link">Materiales para el trabajo<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+                <li>Son todos aquellos que se utilizan para realizar trabajos dentro del aula y que apoyan el proceso de
+                    aprendizaje. Entre ellos están los cuadernos de trabajo, fichas, colores, lápices y demás recursos
+                    que se soliciten según el contexto.
+
+                    Por ejemplo, en los niveles básicos de enseñanza como preescolar, el desarrollo de las habilidades
+                    para la escritura y el conocimiento de las formas y el lenguaje implica que los estudiantes aprendan
+                    a colorear, dibujar, hacer figuras o formas e identificarlas, como en el caso de las letras.
+
+                    Todos estos pasos son necesarios para que el niño aprenda a escribir y a conocer el lenguaje escrito
+                    y reproducirlo.</li>
+
+            </ul>
+        </li>
+        <li>
+            <div class="link">Materiales para el docente<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+                <li>El material didáctico también puede incluir todos los recursos de los que se vale el docente para
+                    obtener o compartir información y mejorar así sus procesos de enseñanza. Dependiendo del contexto,
+                    los materiales didácticos de este tipo pueden ser leyes, bibliografías, manuales y más.
+                </li>
+
+            </ul>
+        </li>
+        <li>
+            <div class="link">Materiales electrónicos<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+                <li>Son aquellos recursos que están vinculados con los dispositivos electrónicos y son transmitidos por
+                    esta vía. Incluye información en forma digital como archivos, documentos, imágenes, diapositivas,
+                    videos, audios, películas, documentales y más.
+
+                    Así pues, integran tecnología como tablets, computadoras, video beam, proyecciones, equipos de
+                    sonido, calculadoras, impresoras, etc.
+                </li>
+
+            </ul>
+        </li>
+    </ul>
+
     <nav class="navegacion">
         <ul>
-            <li><a href="./actividad2.html"><img src="../assets/img/lefth-arrow.png" alt="atras"></a></li>
+            <li><a href="./actividad3.html"><img src="../assets/img/lefth-arrow.png" alt="atras"></a></li>
             <li><a href="../index.html"><img src="../assets/img/home-button.png" alt="inicio"></a></li>
-            <li><a href="./actividad3.html"><img src="../assets/img/right-arrow.png" alt="adelante"></a></li>
+            <li><a href="./actividad4.html"><img src="../assets/img/right-arrow.png" alt="adelante"></a></li>
         </ul>
     </nav>
 
@@ -215,6 +235,36 @@
 
             init_pagination();
             update_view();
+        });
+
+    </script>
+
+    <script>
+        $(function () {
+            var Accordion = function (el, multiple) {
+                this.el = el || {};
+                this.multiple = multiple || false;
+
+                // Variables privadas
+                var links = this.el.find('.link');
+                // Evento
+                links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
+            }
+
+            Accordion.prototype.dropdown = function (e) {
+                var $el = e.data.el;
+                $this = $(this),
+                    $next = $this.next();
+
+                $next.slideToggle();
+                $this.parent().toggleClass('open');
+
+                if (!e.data.multiple) {
+                    $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+                };
+            }
+
+            var accordion = new Accordion($('#accordion'), false);
         });
 
     </script>
