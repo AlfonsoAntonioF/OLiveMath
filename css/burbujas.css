@@ -1,0 +1,53 @@
+.grupo {
+    display: flex;
+    align-content: center;
+    width: 80%;
+    margin: 2rem auto;
+    border-radius: 10px;
+
+
+    background: rgb(3, 4, 111);
+    background: linear-gradient(153deg, rgba(3, 4, 111, 1) 0%, rgba(36, 154, 150, 1) 42%, rgba(60, 137, 149, 1) 59%, rgba(96, 229, 89, 1) 100%);
+}
+
+.grupo .ventajas,
+.desventajas {
+    width: 48%;
+    text-decoration: none;
+    margin: 1rem ;
+    padding: 5px;
+}
+
+.grupo .ventajas {
+    border-radius: 12px;
+    background: rgb(3, 4, 111);
+    background: linear-gradient(153deg, rgba(3, 4, 111, 1) 0%, rgba(98, 186, 230, 1) 42%, rgba(236, 250, 162, 1) 100%);
+
+
+}
+
+.grupo .desventajas {
+    border-radius: 12px;
+    background: rgb(126, 127, 223);
+    background: linear-gradient(153deg, rgba(126, 127, 223, 1) 0%, rgba(98, 186, 230, 1) 42%, rgba(138, 159, 22, 1) 100%);
+
+}
+.grupo .tgrupo{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+
+
+}
+
+.grupo ul li{
+    list-style-type: circle;
+    color: rgb(38, 1, 75);
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 8px;
+    text-align: justify;
+    
+
+
+}
