@@ -643,7 +643,9 @@ html {
     border-color: #2b2573;
     padding: 2rem;
     background-color: #4aa5ac;
-    width: 100%;
+    width: 85%;
+    margin-top: 15px;
+    margin-left: 65px;
 
 
 
@@ -651,10 +653,14 @@ html {
 }
 
 .informacion .subtitulos .parrafos {
+    width: 80%;
     position: static;
     font-size: 2rem;
     font-weight: bold;
     padding: 1rem;
+    margin-top: 15px;
+    margin: 100px;
+    pad: 25px;
 }
 
 .contenidosiframe {
@@ -663,6 +669,7 @@ html {
     align-items: center;
     width: 100%;
     height: auto;
+    
 
 
 }
